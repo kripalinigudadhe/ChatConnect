@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ChatConnect — Real-Time Chat</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <img src="https://cdn-icons-png.flaticon.com/512/481/481454.png" alt="ChatConnect Logo" class="logo">
+    <h1>ChatConnect</h1>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <h2>Welcome to ChatConnect 🤖</h2>
+  </section>
+  <!-- Chat Section -->
+<main class="chat">
+  <header class="chat-header">
+    <h2 class="chat-title">🤖 ChatConnect</h2>
+    <div class="status">
+      <span class="dot"></span>
+      <span id="statusText">Disconnected</span>
+    </div>
+  </header>
+
+  <ul id="messages" class="messages">
+    <li class="system">Welcome to ChatConnect! Start chatting below.</li>
+  </ul>
+
+  <form id="sendForm" class="send" autocomplete="off">
+    <input id="messageInput" placeholder="Type a message..." />
+    <button type="submit">Send</button>
+  </form>
+</main>
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
